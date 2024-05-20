@@ -239,9 +239,6 @@ lvim.plugins = {
       require("neo-tree").setup(neo_tree_cgf)
     end
   },
-  -- {
-  --   "AckslD/nvim-neoclip.lua",
-  -- }
 }
 
 table.insert(lvim.plugins, {
