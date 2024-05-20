@@ -178,8 +178,6 @@ formatters.setup {
   },
 }
 
--- Colorscheme
-lvim.colorscheme = "kanagawa"
 
 -- Plugins
 lvim.plugins = {
@@ -206,7 +204,21 @@ lvim.plugins = {
       require("fidget").setup()
     end,
   },
+  -- Colorschemes plugins
+  {
+    "catppuccin/nvim",
+    name = "catppuccin",
+    priority = 1000
+  },
+  {
+    'rose-pine/neovim',
+    name = 'rose-pine'
+
+  },
+  { 'nyoom-engineering/oxocarbon.nvim' },
+  { "savq/melange-nvim" },
   { "rebelot/kanagawa.nvim" },
+  -- Light speed plugin
   {
     "ggandor/lightspeed.nvim",
     event = "BufRead",
@@ -214,6 +226,7 @@ lvim.plugins = {
   {
     "mrjones2014/nvim-ts-rainbow",
   },
+  -- { "AckslD/nvim-neoclip.lua" },
   {
     "nvim-neo-tree/neo-tree.nvim",
     branch = "v2.x",
@@ -288,3 +301,7 @@ lvim.builtin.which_key.mappings["C"] = {
 
 --  Add your telescope extension
 -- lvim.builtin.telescope.on_config_done = function(telescope)
+
+-- Colorscheme
+lvim.colorscheme = "rose-pine-dawn"
+-- vim.opt.background = "light"
